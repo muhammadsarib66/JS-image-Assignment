@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imge Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body{
+    /* background-color: #c9c9c9; */
+    background: url(bg5.jpg) no-repeat center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.slider{
+    max-width: 50%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#nxt_btn{
+    float: right;
+}
+img{
+    width: 100%;
+    border: 5px solid #ffff;
+    border-radius: 10px;
+}
+
+button{
+    cursor: pointer;
+    width: 100px;
+    padding: 05px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: #91FF33;
+    transition: .25s;
+    /* color: #c9c9c9; */
+}
+h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(253, 253, 253);
+    background-color: #108cd4;
+    border-radius: 15px;
+    border: 2px solid ;
+    
+}
+
+
+
+
+</style>
+
+<body>
+  
+<div class="slider">
+    <h1>Versatile Image Slider</h1>
+    <div class="slider-box">
+        <img src="img1.jpg" class="slide1" alt="" id="imgchange">
+        <button id="prev_btn" onclick="prev()">Previous</button>
+        <button id="nxt_btn"   onclick="next()">Next</button>
+
+        
+    </div>
+</div>
+
+
+
+
+<script src="app.js">
+    
+   
+</script>
+</body>
+</html>
